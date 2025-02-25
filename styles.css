@@ -339,6 +339,10 @@ ul{
 }
 /*---------------consulta de medios para menu-------------*/ 
 @media only screen and (max-width: 800px) {
+    nav{
+        flex-direction: row-reverse;
+        
+    }
     nav ul{
         position: absolute;
         top: 70px;
