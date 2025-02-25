@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Productos</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<div class="cart">
+			<h2 class="cart-title">Tu carrito</h2>
+			<div class="cart-content">
+				<!--<div class="cart-box">
+					<img src="images/Cebada-pres.png" class="cart-img">
+					<div class="cart-detail">
+						<h2 class="cart-product-title">Refresco de cebada</h2>
+						<span class="cart-price">BOB 142.00</span>
+						<div class="cart-quantity">
+							<button id="decrement">-</button>
+							<span class="number">1</span>
+							<button id="increment">+</button>
+						</div>
+					</div>
+					<i class="ri-delete-bin-line cart-remove"></i>
+				</div> -->
+			</div>
+			<div class="total">
+				<div class="total-title">Total</div>
+				<div class="total-price">BOB 00.00</div>
+			</div>
+			<button class="btn-buy">Comprar ahora</button>
+			<i class="ri-close-line" id="cart-close"></i>
+
+		</div>
+		<!--<a href="#" class="logo">Ecommerce</a>-->
+
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="images/logoc.png" width="125px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="products.html">Productos</a></li>
+					<li><a href="">Nosotros</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+		</div>
+		<div id="cart-icon">
+			<i class="ri-shopping-cart-line"></i>
+			<span class="cart-item-count"></span>
+		</div>
+	</header>
+
+	<section class="shop">
+		<h1 class="section-title">Tienda de productos</h1>
+		<div class="product-content">
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/Cebada-pres.png">
+				</div>
+				<h2 class="product-title">CEBADA 3 LITROS</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/canela-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de canela</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/coco-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de coco</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/willkaparu-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de willkaparu</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/willkaparu-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de jamaica</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/chichamorada-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de chicha morada</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/moconchinchi-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de moconchinchi</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="images-box">
+					<img src="images/linaza-pres.png">
+				</div>
+				<h2 class="product-title">Refresco de linaza</h2>
+				<div class="price-and-cart">
+					<div class="precio">
+						<s>BOB 72.00</s>
+						<span class="price">BOB 66.00</span>
+					</div>
+					<i class="ri-shopping-cart-line add-cart"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col-2">
+						<img src="images/logoc.png">
+						<p>Nuestro objetivo es mantener la tradicion de los sabores bolivianos</p>
+					</div>
+					<div class="footer-col-4">
+						<h3>Siguenos</h3>
+						<div class="brands">
+							<div class="small-container">
+								<div class="row">
+									<div class="col-5">
+										<img src="images/facebook-icon-logo-svgrepo-com.svg">
+									</div>
+									<div class="col-5">
+										<img src="images/instagram-2-1-logo-svgrepo-com.svg">
+									</div>
+									<div class="col-5">
+										<img src="images/whatsapp-icon-logo-svgrepo-com.svg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-col-1">
+						<h3>Descarga nuestra aplicacion :D</h3>
+						<p>Descarga nuestra app, disponible en IOS y android</p>
+						<div class="app-logo">
+							<img src="images/play-store.png">
+							<img src="images/app-store.png">
+						</div>
+					</div>
+					
+					
+				</div>
+				<hr>
+				<p class="copyright">Copyright 2025</p>
+			</div>
+		</div>
+	</footer>
+	<script src="script.js	"></script>
+</body>
+
+</html>
