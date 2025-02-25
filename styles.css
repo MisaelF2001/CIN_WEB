@@ -240,7 +240,7 @@ a:hover{
     color: black;
 }
 .logo{
-    margin-right: 200px;
+    margin-right: 100px;
 }
 /*----footer----*/
 .footer{
@@ -339,10 +339,7 @@ ul{
 }
 /*---------------consulta de medios para menu-------------*/ 
 @media only screen and (max-width: 800px) {
-    nav{
-        flex-direction: row-reverse;
-        
-    }
+    
     nav ul{
         position: absolute;
         top: 70px;
